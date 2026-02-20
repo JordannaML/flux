@@ -3,9 +3,11 @@ kind: Kustomization
 metadata:
   name: nginx
 
-commonLabels:
-  app: nginx
 
 resources:
 - nginx.yaml
 - podinfo.yaml
+labels:
+- includeSelectors: true
+  pairs:
+    app: nginx
