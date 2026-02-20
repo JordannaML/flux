@@ -57,5 +57,31 @@ spec:
   prune: true
   timeout: 1m
 
+
+  Entao agora esta tudo rodando conforme o esperado:
+
+~/teste-cluster/flux │ on main ▓▒░                                               ░▒▓ at kind-teste-cluster ⎈ │ at 20:38:27 
+❯ kubectl get pods -A                      
+NAMESPACE     NAME                                                  READY   STATUS    RESTARTS   AGE
+flux-system   helm-controller-74988df57b-d8qpk                      1/1     Running   0          123m
+flux-system   image-automation-controller-86497776cd-cc26n          1/1     Running   0          147m
+flux-system   image-reflector-controller-684c57479b-47gwt           1/1     Running   0          147m
+flux-system   kustomize-controller-6b646448f6-zd4kf                 1/1     Running   0          123m
+flux-system   notification-controller-6c9f6f77d8-bt59l              1/1     Running   0          123m
+flux-system   source-controller-56c7f45479-hh9lp                    1/1     Running   0          123m
+kube-system   coredns-7d764666f9-8cb2m                              1/1     Running   0          3h52m
+kube-system   coredns-7d764666f9-mmq98                              1/1     Running   0          3h52m
+kube-system   etcd-teste-cluster-control-plane                      1/1     Running   0          3h52m
+kube-system   kindnet-qnqj7                                         1/1     Running   0          3h52m
+kube-system   kube-apiserver-teste-cluster-control-plane            1/1     Running   0          3h52m
+kube-system   kube-controller-manager-teste-cluster-control-plane   1/1     Running   0          3h52m
+kube-system   kube-proxy-db98v                                      1/1     Running   0          3h52m
+kube-system   kube-scheduler-teste-cluster-control-plane            1/1     Running   0          3h52m
+kube-system   metrics-server-5f54fb74d9-ljlfd                       1/1     Running   0          3h36m
+nginx         web-dc9f554b7-9zzgv                                   1/1     Running   0          57m
+nginx         web-dc9f554b7-jp4c2                                   1/1     Running   0          57m
+
+
+
   Bom por enquanto e isso, se quiser algum outro teste estou a disposicao. Thanks =)
 
