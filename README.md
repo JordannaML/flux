@@ -11,7 +11,7 @@ Eu AMMMEI  a ferramenta, nao conhecia e nao fazia ideia do quanto ela e legal. V
  e tambem criei um kustomization.yaml dentro da mesma pasta, anteriormente eu usei um spec de label que estava defazado, e acabeio recebendo um warning por conta disso, mas pesquizando na internet ddescobri um comando que faz uma correcao do arquivo de forma altomatica, o comando foi
 
 ❯ kustomize edit fix    
-# Warning: 'commonLabels' is deprecated. Please use 'labels' instead. Run 'kustomize edit fix' to update your Kustomization automatically.
+ Warning: 'commonLabels' is deprecated. Please use 'labels' instead. Run 'kustomize edit fix' to update your Kustomization automatically.
 
 Fixed fields:
   patchesJson6902 -> patches
