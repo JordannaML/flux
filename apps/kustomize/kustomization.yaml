@@ -6,7 +6,7 @@ metadata:
 
 resources:
 - nginx.yaml
-- podinfo.yaml
+
 labels:
 - includeSelectors: true
   pairs:
